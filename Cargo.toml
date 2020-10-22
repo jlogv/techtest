@@ -1,0 +1,7 @@
+[package]
+name = "techtest"
+version = "0.1.0"
+authors = ["Logvinov Alecksey"]
+edition = "2018"
+
+[dependencies]
