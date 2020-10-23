@@ -35,6 +35,6 @@ So, we send the json request to web server, for example:
 to http://127.0.0.1:8080/api/calc
 and receive the result.
 
-Result can be like json this answer or just error text, if error was occuped.
+Result can be json with answer or just error text, if error was occuped.
 
 Using the Insomnia tool it`s can be tested.
