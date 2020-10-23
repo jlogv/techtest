@@ -30,6 +30,10 @@ All main math it task are covered by tests.
 
 How to test.
 
+To run application: cargo run
+
+To run tests: cargo test
+
 So, we send the json request to web server, for example:
 {"a": false, "b": true, "c": true, "d": 30.0, "e": 10, "f": 10}
 to http://127.0.0.1:8080/api/calc
