@@ -2,9 +2,17 @@ enum Kind {
     M, P, T, None
 }
 
-fn main() {
+fn calc (h : &Kind, d: f32, e: i32, f : i32) -> f32
+{
+    match h {
+        Kind::M => d + (d * e as f32 / 10.0),
+        Kind::P => d + (d * (e - f) as f32/ 25.5),
+        Kind::T => d - (d * f as f32 / 30.0),
+        _ => 0.0
+    }
+}
 
-    println!("Finished");
+fn main() {
 
     let a : bool = true;
     let b : bool = true;
@@ -38,12 +46,7 @@ fn main() {
         _=> println!("error"),
     }
 
-    match h {
-        Kind::M => k = d + (d * e as f32 / 10.0),
-        Kind::P => k = d + (d * (e - f) as f32/ 25.5),
-        Kind::T => k = d - (d * f as f32 / 30.0),
-        _ => k = 0.0
-    }
+    k = calc(&h, d, e, f);
 
     if let Kind::P = h {
         k = 2.0 * d + (d * e as f32 / 100.0);
@@ -59,6 +62,12 @@ fn main() {
             h = Kind::M;
         },
         _=> {},
+    }
+
+    k = calc(&h, d, e, f);
+
+    if let Kind::P = h {
+        k = f as f32 + d + (d * e as f32 / 100.0);
     }
 
 }
