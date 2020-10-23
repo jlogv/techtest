@@ -5,3 +5,12 @@ authors = ["Logvinov Alecksey"]
 edition = "2018"
 
 [dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+actix-web = "2.0"
+actix-rt = "1.0"
+simple_logger = "1.6.0"
+log = "0.4.8"
+pam = "0.7.0"
