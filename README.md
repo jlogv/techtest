@@ -2,6 +2,7 @@
 Test task.
 
 Language: Rust
+![Rust](https://github.com/jlogv/techtest/workflows/Rust/badge.svg)
 
 I use it because it`s fast and memory-safe, have many modern features.  
 
